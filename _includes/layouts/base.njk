@@ -1,0 +1,65 @@
+<!doctype html>
+<html {% if section %} data-current="{{ section }}" {% endif %} lang="en">
+
+    {% include "components/head.njk" %}
+
+    <body class="layout-{{ layout | replace("layouts/","") | replace(".njk","") }}">
+
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0" nonce="VTgpuZaE"></script>
+
+        <header class="site-header">
+            <div class="nav-background">
+                <div class="nav-wrapper">
+                    <h1 class="site-title">
+                        <a href="{{ '/' | url }}"><img src="{{ metadata.logo }}" height="80"></a>
+                    </h1>
+                    <div class="header-phone">
+                        <a href="{{ metadata.phone_link }}">Call {{ metadata.phone }}</a>
+                    </div>
+                    {% include "components/nav.njk" %}
+                </div>
+            </div>
+            
+            {% if title == 'Home' %}
+                <div class="hero-wrapper">
+                    <div class="hero-image" style="background-image: url(/static/img/home-slide-1.jpg)"></div>
+                    <div class="hero-logo" style="background-image: url({{ metadata.logo_stacked }}); background-size: 400px;"></div>
+                </div>
+            {% endif %}
+
+        </header>
+
+        <main class="site-main">
+            <div class="wrapper">
+                <div class="main-col">
+                    {{ layoutContent | safe }}
+                </div>
+                <div class="sec-col">
+
+                    <h2>Connect with us</h2>
+                    <div class="footer-social-icons">
+                        <a class="footer-social-icon" href="https://www.facebook.com/ksinstudio/" target="_blank"><img src="/static/img/icons/facebook_90x90.png" alt="Follow {{ site.title }} on Facebook"></a>
+                        <a class="footer-social-icon" href="https://www.instagram.com/ksinstudio/" target="_blank"><img src="/static/img/icons/instagram_90x90.png" alt="Follow {{ site.title }} on Instagram"></a>
+                    </div>
+
+                    {% if title != "Home" %}
+                        <h2>Quick Links</h2>
+                        <div class="big-buttons">
+                            {% include "components/big-buttons.njk" %}
+                        </div>
+                        <div class="column-logo" style="background-image: url({{ metadata.logo }})"></div>
+                    {% endif %}
+                    
+                    {% if title != 'News & Updates' %}
+                        {% include "components/featured-blog.njk" %}
+                    {% endif %}
+                </div>
+            </div>
+        </main>
+
+        {% include "components/footer.njk" %}
+
+    </body>
+
+</html>

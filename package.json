@@ -1,0 +1,38 @@
+{
+  "name": "ksinstudio-eleventy",
+  "version": "0.0.1",
+  "description": "KSin Studio art portfolio website. 11ty + Netlify + NetlifyCMS.",
+  "scripts": {
+    "start": "npm run serve",
+    "build": "npx eleventy",
+    "watch": "npx eleventy --watch",
+    "serve": "npx eleventy --serve",
+    "debug": "DEBUG=* npx eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kylegrover/ksinstudio-eleventy.git"
+  },
+  "author": {
+    "name": "Kyle Grover",
+    "email": "kyle@kylegrover.com",
+    "url": "https://kylegrover.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kylegrover/ksinstudio-eleventy/issues"
+  },
+  "homepage": "https://github.com/kylegrover/ksinstudio-eleventy",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0-beta.3",
+    "luxon": "^1.22.2",
+    "markdown-it": "^10.0.0",
+    "markdown-it-anchor": "^5.2.7"
+  },
+  "dependencies": {
+    "@11ty/eleventy-navigation": "^0.1.5",
+    "clean-css": "^4.2.1",
+    "html-minifier": "^4.0.0",
+    "uglify-es": "^3.3.9"
+  }
+}

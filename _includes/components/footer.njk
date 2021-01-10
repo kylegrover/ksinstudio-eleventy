@@ -1,0 +1,36 @@
+<footer class="site-footer">
+  <div class="foot-wrap">
+    <div class="flex-768">
+      <div>
+        <img src="{{ metadata.logo }}" alt="ASSERT Logo"><br>
+        {{ metadata.title }}<br>
+        {{ metadata.phone }}<br>
+      </div>
+      <div>
+        <h5>Connect with us</h5>
+        <div class="footer-social-icons">
+            <span></span>
+            <a class="footer-social-icon" href="https://www.facebook.com/ASSERTTheSecondResponders/" target="_blank"><img src="/static/img/icons/facebook_90x90.png" alt="Follow ASSERT on Facebook" width="40"></a>
+            <a class="footer-social-icon" href="https://www.instagram.com/assert.the.second.responders/" target="_blank"><img src="/static/img/icons/instagram_90x90.png" alt="Follow ASSERT on Instagram" width="40"></a>
+            <span></span>
+        </div>
+      </div>
+      <div>
+        <h5>Quick Nav</h5>
+        <a href="/volunteer/">Volunteer</a><br>
+        <a href="/donate/">Donate</a><br>
+        <a href="/request-help/">Request Help</a><br>
+        <a href="/found-animal/">Report Animals</a><br>
+        <a href="/about/">About ASSERT</a>
+      </div>
+    </div>
+    <small>
+      <br>© {{ metadata.title }} 2020 | Website by <a href="https://www.kylegrover.com" target="_blank">Kyle Grover</a>
+    </small>
+  </div>
+</footer>
+{% if page.url == '/donate/'%}
+  <script src="https://www.paypal.com/sdk/js?client-id=AZjlwI7PkofacXr3KoQGeKrsAU1cGyK1KjLmOdB9zX9UDEBt1p5B7L9MRN9mv5ldoQGYw1Ja5DN7dUJX&currency=USD" data-sdk-integration-source="button-factory"></script>
+  <script src="/static/js/paypal-donate.js"></script>
+{% endif %}
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>

@@ -1,0 +1,7 @@
+{
+  "layout": "layouts/post.njk",
+  "permalink": "posts/{{ title | slugify }}/index.html",
+  "tags": [
+    "post"
+  ]
+}
