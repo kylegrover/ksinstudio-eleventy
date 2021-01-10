@@ -6,6 +6,7 @@ eleventyNavigation:
   key: Search
   order: 5
 excludeFromSearch: true
+published: false
 ---
 <!-- HTML elements for search -->
 <input type="text" id="search-input" placeholder="Search Updates & News">

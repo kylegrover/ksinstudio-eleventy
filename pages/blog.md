@@ -6,4 +6,5 @@ permalink: /blog/index.html
 eleventyNavigation:
   key: News
   order: 2
+published: false
 ---
