@@ -1,10 +1,10 @@
 ---
 layout: layouts/blog.njk
-title: News & Updates
+title: Art by Kevin Singleton
 date: 2017-01-01
-permalink: /blog/index.html
+permalink: /art/index.html
 eleventyNavigation:
-  key: News
+  key: Art
   order: 2
 published: false
 ---

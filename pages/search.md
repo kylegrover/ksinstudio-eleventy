@@ -2,9 +2,9 @@
 title: Search
 date: 2020-07-29T00:00:00.000Z
 permalink: /search/
-eleventyNavigation:
-  key: Search
-  order: 5
+# eleventyNavigation:
+#   key: Search
+#   order: 5
 excludeFromSearch: true
 published: false
 ---

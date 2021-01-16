@@ -1,6 +1,6 @@
 ---
 layout: layouts/contact.njk
-title: Get in touch
+title: Let's make something happen
 section: contact
 date: 2018-01-01
 permalink: /contact/index.html
