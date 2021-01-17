@@ -28,6 +28,13 @@
                 </div>
             {% endif %}
 
+            {% if page.inputPath | startswithposts %}
+                <div class="hero-wrapper">
+                    <div class="hero-image" style="background-image: url({{ image }})"></div>
+                    {# <div class="hero-logo" style="background-image: url({{ metadata.logo_stacked }}); background-size: 400px;"></div> #}
+                </div>
+            {% endif %}
+
         </header>
 
         <main class="site-main">

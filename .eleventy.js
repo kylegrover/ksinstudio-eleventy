@@ -9,6 +9,11 @@ module.exports = function (eleventyConfig) {
 
   // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+  
+  // Creates custom collection "myPosts"
+  eleventyConfig.addCollection("artworks", function(collection) {
+      return collection.getFilteredByGlob("/artworks/*");
+  });
 
   // Configuration API: use eleventyConfig.addLayoutAlias(from, to) to add
   // layout aliases! Say you have a bunch of existing content using
@@ -70,6 +75,11 @@ module.exports = function (eleventyConfig) {
       replacement: "-",
       remove: /[#*+~.·,()'"`´%!?¿:@]/g
     });
+  });
+
+  // Universal slug filter strips unsafe chars from URLs
+  eleventyConfig.addFilter("startswithposts", function (str) {
+    return str.startsWith('./posts/');
   });
 
   //  Make a search index string by removing duplicated words and removing less useful, common short words

@@ -1,9 +1,8 @@
 ---
 title: "Surachai - The Shedding of Useful Skin [Music Video]"
 date: 2020-09-14T03:06:07.134Z
-author: Kevin Singleton
 summary: Audio-reactive Music Video, Rendered by Kevin Singleton for Sub-Freq
+image: https://img.youtube.com/vi/5_cblLYNrFI/hqdefault.jpg
 tags:
   - post
-  - art
 ---
