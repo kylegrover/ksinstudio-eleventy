@@ -7,7 +7,7 @@ section: home
 
 <section class="art-grid">
 	{% for post in collections.post %}
-		<a class="art-grid-item" href="{{ post.url | url }}"><img src="{{ post.data.image }}"></a>
+		<a class="art-grid-item" href="{{ post.url | url }}" style="background-image: url({{ post.data.image }}); background-position: center; background-sizing: cover;"></a>
 		{# <article{% if post.url == url %} data-current="current item"{% endif %} class="featured-post">
 			<h3 class="featured-post_title">
 				<a href="{{ post.url | url }}">

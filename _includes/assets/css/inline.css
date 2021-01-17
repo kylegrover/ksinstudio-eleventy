@@ -655,6 +655,7 @@ footer h5 {
 .art-grid .art-grid-item { 
 	width: 300px; 
 	margin-bottom: 10px;
-	display: inline-block;
-	vertical-align: top;
+	height: 300px;
+	/* display: inline-block;
+	vertical-align: top; */
 }
