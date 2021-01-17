@@ -43,12 +43,7 @@
     {{css | cssmin | safe}}
   </style>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-  {% set js %}
-  {% include "assets/js/inline.js" %}
-  {% endset %}
-  <script>
-    {{ js | jsmin | safe }}
-  </script>
+  <script src="/static/js/masonry.pkgd.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
 
   {# Global site tag (gtag.js) - Google Analytics #}

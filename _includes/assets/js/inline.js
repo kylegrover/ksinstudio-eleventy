@@ -50,3 +50,11 @@ function handle_form_ajax($form, $btn, $form_response) {
     $btn.prop('disabled', false);
   })
 }
+
+$('.art-grid').masonry({
+  // options
+  itemSelector: '.art-grid-item',
+  columnWidth: 300,
+  gutter: 10,
+  stagger: 30
+});

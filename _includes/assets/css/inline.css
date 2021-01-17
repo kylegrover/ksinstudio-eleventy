@@ -1,5 +1,5 @@
 :root {
-	--primary: #d94828;
+	--primary: #c11;
 	--secondary: white;
 	--accent: rgb(38, 92, 240);
 	--background: #000;
@@ -387,8 +387,6 @@ button {
 	}
 }
 
-.footer-social {
-}
 
 .footer-social-icon {
 	display: inline-block;
@@ -410,7 +408,7 @@ button {
 	/* background-image: url('/static/img/mossy-tree-banner-1.jpg'); */
 	background-size: cover;
 	background-position: center;
-    background: #333;
+    background: #111;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     /* background: linear-gradient(0deg, white, #ddd); */
 }
@@ -424,16 +422,16 @@ button {
 
 .site-footer {
 	text-align: center;
-	background: #333;
+	/* background: #111; */
     /* background: linear-gradient(180deg, white, #777); */
-	color: #fff;
+	/* color: #fff; */
 	/* font-weight: 800; */
 }
 .site-footer .wrapper {
 	display: block;
 }
 .site-footer a {
-	color: #ccc;
+	color: #444;
 	font-weight: 600;
 	text-decoration: underline!important;
 }
@@ -652,4 +650,11 @@ footer h5 {
 
 .main-col p {
 	text-align: justify;
+}
+
+.art-grid .art-grid-item { 
+	width: 300px; 
+	margin-bottom: 10px;
+	display: inline-block;
+	vertical-align: top;
 }
