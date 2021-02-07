@@ -1,6 +1,6 @@
 {
-    "name": "KSin Studio",
-    "short_name": "Rendered & Illustrated Artwork by Kevin Singleton",
+    "name": "KSinStudio.com",
+    "short_name": "KSinStudio.com",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#000000",
-    "background_color": "#000000",
+    "theme_color": "#eeeeee",
+    "background_color": "#eeeeee",
     "display": "standalone"
 }
