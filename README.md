@@ -22,7 +22,7 @@ Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) re
 ### Admin/Author setup
 
 We can only have 5 CMS accounts on the free Netlify plan. For access contact Kyle or another mod/dev. They'll send you an account setup email that will link you to the website and you should be good to go from there.
-The website CMS is accessible at https://assert.earth/admin/
+The website CMS is accessible at https://ksinstudio.netlify.app/admin/
 
 You can optionally use an external login provider when setting up your account.
 
@@ -47,7 +47,7 @@ git clone https://github.com/kylegrover/ksinstudio-eleventy.git
 ### 2. Navigate to the directory
 
 ```
-cd assert-earth-eleventy
+cd ksinstudio-eleventy
 ```
 
 ### 3. Install dependencies locally
