@@ -25,7 +25,12 @@
             
             {% if title == 'Home' %}
                 <div class="hero-wrapper">
-                    <div class="hero-image" style="background-image: url(/static/img/home-slide-1.jpg)"></div>
+                    {# <div class="hero-image" style="background-image: url(/static/img/squiggly-banner.jpg)"></div> #}
+                    <video autoplay="" muted="" playsinline="" loop="" class="hero-image" poster="static-banner.jpg">
+                        {# <source src="https://www.diamondbackplumbing.com/wp-content/themes/diamondback2020/video/youtube_i4oZd4Q0s4U_1920x900_1mbps_clean.webm" type="video/webm"> #}
+                        <source src="/static/vid/spinal-full.mp4" type="video/mp4">
+                    </video>
+                    
                     <div class="hero-logo" style="background-image: url({{ metadata.logo_stacked }}); background-size: 400px;"></div>
                 </div>
             {% endif %}
