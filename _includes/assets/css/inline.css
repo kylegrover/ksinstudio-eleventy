@@ -1,6 +1,6 @@
 :root {
 	--primary: #c11;
-	--secondary: white;
+	--secondary: #ddd;
 	--accent: rgb(38, 92, 240);
 	--background: #000;
 	--headline-font: 'Oswald', sans-serif;
@@ -391,11 +391,18 @@ textarea {
 	border: 1px solid black;
 }
 
-button {
-	border: 1px solid var(--primary);
-	background-color: var(--primary);
-	color: var(--secondary);
-	cursor: pointer;
+button, .btn-primary {
+    border: 3px solid var(--primary);
+    background-color: var(--primary);
+    color: var(--secondary);
+    cursor: pointer;
+    background: linear-gradient(0deg, #520606, var(--primary));
+    box-shadow: 0 0px 10px var(--primary) inset, 0 0px 20px var(--primary);
+    border-radius: 6px;
+    margin: 10px auto;
+    line-height: 1;
+    padding: 0.5em 2em;
+    width: auto;
 }
 
 @media screen and (min-width:768px) {
@@ -466,7 +473,10 @@ button {
 	
 }
 
-.site-main {background: #000;}
+.site-main {
+	background: #000;
+	color: #ddd;
+}
 .site-main img {
     max-width: 100%;
     margin: 5px auto;
