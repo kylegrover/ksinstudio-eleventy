@@ -403,6 +403,22 @@ button, .btn-primary {
     line-height: 1;
     padding: 0.5em 2em;
     width: auto;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.hero-wrapper .btn-primary {	
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media (min-width: 769px) {
+	.hero-wrapper .btn-primary {
+			left: 54.5%;
+	}
 }
 
 @media screen and (min-width:768px) {
@@ -453,10 +469,10 @@ button, .btn-primary {
 	display: block;
 }
 .site-footer a {
-	color: #444;
+	color: #777;
 	font-weight: 600;
-	text-decoration: underline!important;
 }
+.site-footer .btn-primary {color: #fff;}
 
 .site-title a {
 	color: var(--secondary);

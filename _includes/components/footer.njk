@@ -1,5 +1,8 @@
 <footer class="site-footer">
   <div class="foot-wrap">
+    {% if page.url != '/contact/' %}
+      <div style="text-align: center; margin: 70px auto"><a class="btn-primary" href="/contact/">hire me / collaborate</a></div>
+    {% endif %}
     <div class="flex-768">
       {# <div>
         <img width="260" src="{{ metadata.logo }}" alt="KSin Studio"><br>
