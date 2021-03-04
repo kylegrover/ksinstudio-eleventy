@@ -8,7 +8,13 @@ section: home
 
 <div id="nanogallery2">		
 	{% for post in collections.post %}
-	<a href="{{ post.data.video_url if post.data.video_url else post.data.image }}" data-ngThumb="{{ post.data.image }}" data-ngTags="{{ post.data.gallery_tags | join(" ") }}">{{ post.data.title }}</a>
+	<a 
+		href="{{ post.data.video_url if post.data.video_url else post.data.image }}" 
+		data-ngThumb="{{ post.data.image }}" 
+		data-ngTags="{{ post.data.gallery_tags | join(" ") }}"
+		data-ngdesc="{{ post.data.summary }}"
+		alt="{{ post.data.title }}"
+		>{{ post.data.title }}</a>
 	{% endfor %}
 </div>
 <script>
