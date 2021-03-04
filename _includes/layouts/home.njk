@@ -8,11 +8,15 @@ section: home
 
 <div id="nanogallery2">		
 	{% for post in collections.post %}
-	<a href="{{ post.data.video_url if post.data.video_url else post.data.image }}" data-ngThumb="{{ post.data.image }}">{{ post.title }}</a>
+	<a href="{{ post.data.video_url if post.data.video_url else post.data.image }}" data-ngThumb="{{ post.data.image }}" data-ngTags="{{ post.data.gallery_tags | join(" ") }}">{{ post.data.title }}</a>
 	{% endfor %}
 </div>
 <script>
 jQuery("#nanogallery2").nanogallery2({
+// KEYWORD FILTERING
+galleryFilterTags: true,
+galleryFilterTagsMode: 'multiple',
+
 // GALLERY AND THUMBNAIL LAYOUT
 galleryMosaic : [                       // default layout
 { w: 2, h: 2, c: 1, r: 1 },

@@ -6,4 +6,7 @@ image: https://img.youtube.com/vi/5_cblLYNrFI/hqdefault.jpg
 video_url: https://www.youtube.com/watch?v=5_cblLYNrFI
 tags:
   - post
+gallery_tags:
+  - Videos
+  - 3D
 ---
