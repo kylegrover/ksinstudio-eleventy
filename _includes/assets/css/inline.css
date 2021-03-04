@@ -1,6 +1,6 @@
 :root {
 	--primary: #c11;
-	--secondary: #ddd;
+	--secondary: #fff;
 	--accent: rgb(38, 92, 240);
 	--background: #000;
 	--headline-font: 'Oswald', sans-serif;
@@ -263,7 +263,7 @@ header nav li a[data-current="current item"] {
 } */
 
 .hero-logo {
-	background-size: 300px;
+	background-size: 400px;
 	background-position: center;
 	background-repeat: no-repeat;
 	width: 100%;
@@ -446,11 +446,22 @@ button, .btn-primary {
 
 .nav-background {
 	/* background-image: url('/static/img/mossy-tree-banner-1.jpg'); */
-	background-size: cover;
-	background-position: center;
-    background: #000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+	/* background-size: cover;
+	background-position: center; */
+    background: #0000;
+    /* box-shadow: 0 2px 5px rgba(0,0,0,0.2); */
     /* background: linear-gradient(0deg, white, #ddd); */
+	transition: 0.5s background ease, 0.4s box-shadow ease;
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.scrolled .nav-background {
+	background: #000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+
 }
 
 .header-image {
@@ -730,3 +741,10 @@ footer h5 {
 	flex: 0 0 auto;
     margin: 0 10px;
 }
+@media (max-width: 500px) {
+	.site-header .header-social-icon {
+		display: none;
+	}
+}
+
+.grecaptcha-badge {visibility: hidden;}

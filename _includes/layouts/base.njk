@@ -11,9 +11,9 @@
         <header class="site-header">
             <div class="nav-background">
                 <div class="nav-wrapper">
-                    <h1 class="site-title">
+                    {# <h1 class="site-title">
                         <a href="{{ '/' | url }}"><img src="{{ metadata.logo }}" height="80"></a>
-                    </h1>
+                    </h1> #}
                     {# <div class="header-phone">
                         <a href="{{ metadata.phone_link }}">Call {{ metadata.phone }}</a>
                     </div> #}
@@ -23,7 +23,7 @@
                 </div>
             </div>
             
-            {% if title == 'Home' %}
+            {# {% if title == 'Home' %} #}
                 <div class="hero-wrapper">
                     {# <div class="hero-image" style="background-image: url(/static/img/squiggly-banner.jpg)"></div> #}
                     <video autoplay="" muted="" playsinline="" loop="" class="hero-image" poster="static-banner.jpg">
@@ -31,10 +31,10 @@
                         <source src="/static/vid/spinal-full.mp4" type="video/mp4">
                     </video>
                     
-                    <div class="hero-logo" style="background-image: url({{ metadata.logo_stacked }}); background-size: 400px;"></div>
+                    <div class="hero-logo" style="background-image: url({{ metadata.logo_stacked }});"></div>
                     {# <a class="btn-primary" href="/contact/">hire me / collaborate</a> #}
                 </div>
-            {% endif %}
+            {# {% endif %} #}
 
             {% if page.inputPath | startswithposts %}
                 <div class="hero-wrapper">

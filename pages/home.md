@@ -7,6 +7,3 @@ eleventyNavigation:
   key: Home
   order: 0
 ---
-
-
-[hire me / collaborate](/contact/)

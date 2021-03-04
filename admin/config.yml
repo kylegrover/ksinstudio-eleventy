@@ -21,6 +21,10 @@ collections:
         name: "thumbnail"
         widget: "image"
         required: false
+      - label: "Video URL"
+        name: "video_url"
+        widget: "string"
+        required: false
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Body", name: "body", widget: "markdown" }
